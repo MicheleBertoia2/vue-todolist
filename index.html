@@ -37,9 +37,10 @@
         <h2>Non ci sono Tasks &#128526;</h2>
 
         <ul class="tasks-list">
-          <li>fare spesa</li>
-          <li>bagnare orto</li>
-          <li>controllare se Bari è un ottimo polo</li>
+          <li v-for="(task, index) in tasks">
+            <span>{{task.text}}</span>
+            <i class="fa-solid fa-trash"></i>
+          </li>          
         </ul>
     </div>
 

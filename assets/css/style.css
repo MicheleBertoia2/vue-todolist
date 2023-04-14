@@ -54,6 +54,19 @@ body {
   color: red;
 }
 
+.tasks-list {
+  padding: 10px 20px;
+}
+
 .tasks-list li {
   list-style: none;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.tasks-list li span {
+  line-height: 50px;
 }
