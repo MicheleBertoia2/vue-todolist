@@ -36,10 +36,22 @@ createApp({
         },
 
         {
-          text : 'chiamare avvocato',
+          text : 'giocare a nascondino con i camaleonti',
           done : false
         },
-      ]
+      ],
+      errorMsg : '',
+    }
+  },
+
+  methods : {
+    deleteTask(index){
+      // errorMsg = ''
+      if(this.tasks[index].done){
+        this.tasks.splice(index, 1)
+      }else{
+        this.errorMsg = 'Attenzione per cancellare la task assicurati di averla completata!'
+      }
     }
   }
 }).mount('#app')
